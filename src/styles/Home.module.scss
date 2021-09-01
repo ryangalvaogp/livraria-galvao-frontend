@@ -1,0 +1,103 @@
+.landingPageLoginOne{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    align-items: center;
+
+    .image {
+        display: contents;
+       width: 100vw;
+    }
+    
+    .textApresentation{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 2rem;
+
+        p{
+            font-family: Tinos;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 41px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+
+        span{    
+            gap: 9px;
+        }        
+    }
+
+    .formLogin{
+        display: grid;
+        grid-row-gap: 50px;
+        justify-items: center;
+        border-radius: 0 0 2px 2px;
+        background-color: var(--background);
+    }
+
+    .separator{
+        font-size: 14px;
+        color: #a8a8b3;
+        width: 40rem;
+        display: flex;
+        align-items: center;
+        
+        &::before{
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: #a8a8b3;
+            margin-right: 16px;
+        }
+        &::after{
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: #a8a8b3;
+            margin-left: 16px;
+        }
+    }
+
+    .loginWithGoogle{
+        
+        width: 17rem;
+        height: 50px;
+        border-radius: 8px;
+        font-weight: 500;
+        background: #88160b;
+        color: #FFF;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        cursor: pointer;
+        border: 0;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        transition: background 0.2s;
+
+        .Img{
+            gap:15px;
+            padding-left: 6px;
+        }
+
+        &:hover{
+            background: #661008;
+        }
+    }
+     span:not(span:last-child){
+        font-size: 0.8vw;
+    }
+}

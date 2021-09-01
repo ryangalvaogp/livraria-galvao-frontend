@@ -1,0 +1,59 @@
+.InputLabelContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    input{
+        border: 0;
+        border-bottom: 0.12492192379762648vw solid var(--blue-dark);
+        border-radius: 0px;
+        box-sizing: border-box;
+        outline: none;        
+        transition: .2s ease-in-out;
+        background-color:var(--background) ;
+        
+        &:focus {
+            border-bottom:0.12492192379762648vw solid  var(--yellow);   
+        }
+        &:focus + label {
+            color: var(--yellow);
+            font-size:  0.8rem;
+            top: -15px;
+            pointer-events: none;
+          }
+
+        &.valid + label,
+        &,label {
+            width: 100%;
+            height: 3rem;
+            font-size: 1rem;
+        }
+        &.valid + label,
+        &:focus + label {
+        color: var(--yellow);
+        font-size: 0.8rem;
+        top: -15px;
+        pointer-events: none;
+        }
+    }
+            input {
+            width: 100%;
+            height: 2rem;
+            font-size: 1rem;
+        }
+    label{
+        top:-12px;
+        left: 0; right: 0;
+       color: #616161;
+        display: flex;
+        align-items: center;
+       position: absolute;
+       font-size: 1rem;
+       cursor: text;
+       transition: .2s ease-in-out;
+       box-sizing: border-box;
+  }
+
+  
+    
+}
